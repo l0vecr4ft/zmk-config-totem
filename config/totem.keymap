@@ -127,7 +127,7 @@ label= "NAV"                               ;
 label= "FUN"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃           ┃           ┃           ┃   CLOK    ┃   ┃    F7     ┃    F8     ┃    F9     ┃           ┃           ┃
+//             ┃           ┃           ┃           ┃           ┃   CAPS    ┃   ┃    F7     ┃    F8     ┃    F9     ┃           ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃    LGUI   ┃    LALT   ┃   LCTRL   ┃   LSHFT   ┃    INS    ┃   ┃    F4     ┃    F5     ┃    F6     ┃           ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
@@ -138,7 +138,7 @@ label= "FUN"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &none       &none       &none       &kp CLOK        &kp F7      &kp F8      &kp F9      &none       &none
+                &none       &none       &none       &none       &kp CAPS        &kp F7      &kp F8      &kp F9      &none       &none
                 &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &kp INS         &kp F4      &kp F5      &kp F6      &none       &none
     &none       &none       &none       &none       &none       &kp PAUSE_BREAK &kp F1      &kp F2      &kp F3      &none       &none       &none
                                         &trans      &trans      &trans          &trans      &kp F10     &trans
