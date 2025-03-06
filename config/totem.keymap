@@ -23,22 +23,27 @@
 #define FUN  3
 #define MOUS 4
 
-&mt {
-  quick-tap-ms = <150>;
-  global-quick-tap;
-  flavor = "tap-preferred";
-  tapping-term-ms = <200>;
-};
-
 / {
      combos {
             compatible = "zmk,combos";
             combo_capsword {
                 timeout-ms = <50>;
-                key-positions = <15 18>;
+                key-positions = <13 16>;
                 bindings = <&caps_word>;
             };
     };
+
+     behaviors {
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
 
      keymap {
             compatible = "zmk,keymap";
@@ -61,7 +66,7 @@ display-name = "BASE"                      ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
-                &mt LGUI A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &mt RSHFT J &mt RCTRL K &mt LALT L  &mt RGUI COLON
+                &bhm LGUI A &bhm LALT S &bhm LCTRL D &bhm LSHFT F &kp G         &kp H       &bhm RSHFT J &bhm RCTRL K &bhm LALT L  &bhm RGUI COLON
     &kp ESC     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp APOS
                                         &kp DEL     &lt SYM SPACE &kp TAB      &lt FUN BSPC &kp RET    &lt NAV GRAVE
                         >;
