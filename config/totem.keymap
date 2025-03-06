@@ -27,7 +27,7 @@
   tapping-term-ms = <200>;
   quick-tap-ms = <120>;
   global-quick-tap;
-  flavor = "tap-preferred";
+  flavor = "tap-unless-interrupted";
 };
 
 / {
