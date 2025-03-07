@@ -62,7 +62,7 @@ display-name = "BASE"                      ;
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                 &mt LGUI A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &mt RSHFT J &mt RCTRL K &mt LALT L  &mt RGUI SEMI
     &kp ESC     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp APOS
-                                        &kp DEL     &lt SYM SPACE &kp TAB      &mt FUN BSPC &kp RET    &lt NAV GRAVE
+                                        &kp DEL     &lt SYM SPACE &kp MOUS TAB  &lt FUN BSPC &kp RET    &lt NAV GRAVE
                         >;
                 };
 
